@@ -1,3 +1,4 @@
+/* eslint-disable prefer-const */
 export class StoreClass {
     static getLastPokemon() {
         return localStorage.getItem(StoreClass.lastPokemon)
@@ -33,5 +34,7 @@ export class StoreClass {
         }
     }
 }
+// eslint-disable-next-line @typescript-eslint/no-inferrable-types
 StoreClass.lastPokemon = 'lastPokemon';
+// eslint-disable-next-line @typescript-eslint/no-inferrable-types
 StoreClass.favorites = 'favorites';

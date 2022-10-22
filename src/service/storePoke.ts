@@ -1,7 +1,9 @@
-import { PokemonModel } from '../models/Pokemon';
+/* eslint-disable prefer-const */
 
 export class StoreClass {
+  // eslint-disable-next-line @typescript-eslint/no-inferrable-types
   static lastPokemon: string = 'lastPokemon';
+  // eslint-disable-next-line @typescript-eslint/no-inferrable-types
   static favorites: string = 'favorites';
 
   static getLastPokemon(): string {

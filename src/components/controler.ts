@@ -1,6 +1,7 @@
 import { PokemonModel } from '../models/pokemonModel.js';
 import { DataPokemon } from '../service/dataPokemon.js';
 import { PokemonList } from "../components/pokemonList.js";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {PokeService} from "../service/pokeservices.js";
 
 export class Controller {
