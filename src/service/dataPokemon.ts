@@ -1,4 +1,4 @@
-import { Component } from '../components/component.js';
+//import { Component } from '../components/component.js';
 import { iPokemon } from '../interface/ipokemon.js';
 
 
@@ -12,5 +12,9 @@ export class DataPokemon {
   }
   getNextPage(nextUrl: string): Promise<Array<iPokemon>> {
     return fetch(nextUrl).then((response) => response.json());
+  }
+  getPreviousPage(previousUrl: string): Promise<Array<iPokemon>> {
+    if (!previousUrl) return this.getPoke();
+    return fetch(previousUrl).then((response) => response.json());
   }
 }
