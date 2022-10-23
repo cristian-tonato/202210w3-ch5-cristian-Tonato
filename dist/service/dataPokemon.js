@@ -1,13 +1,11 @@
 export class DataPokemon {
     constructor() {
-        this.url = 'https://pokeapi.co/api/v2/pokemon';
+        this.url = 'https://pokeapi.co/api/v2/pokemon?limit=20&offset=0';
     }
-    static getPokemon(i) {
-        throw new Error('Method not implemented.');
+    getPoke() {
+        return fetch(this.url).then((response) => response.json());
     }
-    getPokemon(id) {
-        return fetch(this.url + `${id}`).then((resp) => {
-            return resp.json();
-        });
+    getNextPage(nextUrl) {
+        return fetch(nextUrl).then((response) => response.json());
     }
 }

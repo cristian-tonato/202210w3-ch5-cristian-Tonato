@@ -1,5 +1,5 @@
-import { PokemonList } from '../components/pokemonList.js';
+import { PokeList } from '../components/pokemonList.js';
 
 export function misPokemon() {
-  new PokemonList('.list__container-list',[]);
+  new PokeList('.list__container-list');
 }

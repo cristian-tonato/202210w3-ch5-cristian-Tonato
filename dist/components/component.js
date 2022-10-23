@@ -1,18 +1,29 @@
 export class Component {
-    render(selector) {
-        if (selector && document.querySelector(selector)) {
-            document.querySelector(selector).innerHTML = this.template;
-        }
+    render(selector, template) {
+        if (!selector)
+            return false;
+        const element = document.querySelector(selector);
+        if (element === null)
+            return false;
+        element.innerHTML = template;
+        return true;
     }
-    addRender(selector) {
-        if (document.querySelector(selector)) {
-            document.querySelector(selector).innerHTML += this.template;
-        }
+    renderAdd(selector, template) {
+        if (!selector)
+            return false;
+        const element = document.querySelector(selector);
+        if (element === null)
+            return false;
+        element.innerHTML += template;
+        return true;
     }
-    outRender(selector) {
-        if (document.querySelector(selector)) {
-            document.querySelector(selector).outerHTML = this.template;
-        }
+    renderOuter(selector, template) {
+        if (!selector)
+            return false;
+        const element = document.querySelector(selector);
+        if (element === null)
+            return false;
+        element.outerHTML = template;
+        return true;
     }
 }
-//archivo que se encargada de renderizar

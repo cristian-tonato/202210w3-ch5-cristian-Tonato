@@ -1,19 +1,30 @@
 export abstract class Component {
-  template!: string;
-  render(selector: string) {
-    if (selector && document.querySelector(selector)) {
-      (<Element>document.querySelector(selector)).innerHTML = this.template;
-    }
+  render(selector: string, template: string) {
+    if (!selector) return false;
+    const element = document.querySelector(selector);
+    if (element === null) return false;
+    element.innerHTML = template;
+    return true;
   }
-  addRender(selector: string) {
-    if (document.querySelector(selector)) {
-      (<Element>document.querySelector(selector)).innerHTML += this.template;
-    }
+
+  renderAdd(selector: string, template: string) {
+    if (!selector) return false;
+    const element = document.querySelector(selector);
+    if (element === null) return false;
+    element.innerHTML += template;
+    return true;
   }
-  outRender(selector: string) {
-    if (document.querySelector(selector)) {
-      (<Element>document.querySelector(selector)).outerHTML = this.template;
-    }
+
+  renderOuter(selector: string, template: string) {
+    if (!selector) return false;
+    const element = document.querySelector(selector);
+    if (element === null) return false;
+    element.outerHTML = template;
+    return true;
   }
 }
 //archivo que se encargada de renderizar
+export interface IComponent {
+  createTemplate: () => string;
+  manageComponent: () => void;
+}
