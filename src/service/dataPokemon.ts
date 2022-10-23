@@ -1,18 +1,16 @@
-import { iPokemon } from "../interface/ipokemon";
-import {Component } from "../components/component.js";
+import { Component } from '../components/component.js';
+import { iPokemon } from '../interface/ipokemon.js';
 
 
-export class DataPokemon{
-  static getPokemon(i: number): Promise<import("../models/pokemonModel").PokemonModel> {
-    throw new Error('Method not implemented.');
-  }
+export class DataPokemon {
   url: string;
-  constructor(){
-    this.url = 'https://pokeapi.co/api/v2/pokemon';
+  constructor() {
+    this.url = 'https://pokeapi.co/api/v2/pokemon?limit=20&offset=0';
   }
-  getPokemon(id: number): Promise<iPokemon>{
-    return fetch(this.url + `${id}`).then((resp)=>{
-      return resp.json();
-    })
+  getPoke(): Promise<Array<iPokemon>> {
+    return fetch(this.url).then((response) => response.json());
+  }
+  getNextPage(nextUrl: string): Promise<Array<iPokemon>> {
+    return fetch(nextUrl).then((response) => response.json());
   }
 }

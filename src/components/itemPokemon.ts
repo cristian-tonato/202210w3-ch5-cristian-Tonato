@@ -1,4 +1,4 @@
-import { iPokemon } from "../interface/ipokemon.js";
+/*import { iPokemon } from "../interface/ipokemon.js";
 import { PokemonModel } from "../models/pokemonModel.js";
 import { Component } from "../components/component.js";
 //import { DataPokemon } from "../service/dataPokemon.js";
@@ -32,4 +32,4 @@ export class ItemPokemon extends Component implements iPokemon {
         </li>
         `;
   }
-}
+}*/
