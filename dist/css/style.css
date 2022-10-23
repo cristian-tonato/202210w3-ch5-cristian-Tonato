@@ -1,16 +1,93 @@
-*{
-  box-sizing: border-box;
-  margin: 1rem;
-  padding:1rem
+* {
+    box-sizing: border-box;
+  
 }
-header{
-  display: flex;
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-image: url("/dist/img/wp1864291.jpg");
 }
 
-body{
-  background-color: rgb(229, 231, 158);
+a.home{
+  color: rgb(126, 74, 5);
+  list-style: none;
+  text-decoration: none;
   display: flex;
-  flex-direction: row;
-  margin:  0;
-  max-height: 100vh;
+  justify-content:space-between;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 20px;
+  background-color: antiquewhite;
+
+
+}
+a.favorites{
+  color: rgb(126, 74, 5);
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  justify-content:space-between;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 20px;
+  background-color: antiquewhite;
+}
+
+nav.menu_item{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    color: antiquewhite;
+    font-size: 45px;
+    border-radius: 40px;
+}
+header,
+footer {
+    flex: 1 0 auto;
+    color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    flex: 10 0 auto;
+    margin: 1rem;
+    padding: 1rem;
+}
+div .poke-card{
+  border-style: solid;
+  color: rgb(251, 254, 218);
+  border-radius: 40px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-style: groove;
+
+}
+section li {
+    border: 1px rgb(220, 220, 220) solid;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.previous-button{
+  background-color: antiquewhite;
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
+  font-size: 20px;
+}
+.next-button{
+  background-color: antiquewhite;
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
+  font-size: 20px;
+}
+address.name{
+  font-size: 40px;
 }

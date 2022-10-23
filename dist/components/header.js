@@ -13,6 +13,14 @@ export class Header extends Component {
           <div>
             <h1><img src="./img/International_Pokémon_logo.svg.png" alt=""></h1>
           </div>
+          <div class="menu">
+        <ul class ="menu_home">
+        <nav class= "menu_item">
+        <a class = "home" href="">HOME</a>
+        <a class ="favorites" href="">FAVORITES</a>
+        </nav>
+        </ul>
+          </div>
         </header>
         `;
     }

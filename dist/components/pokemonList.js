@@ -83,11 +83,11 @@ export class PokeList extends Component {
             this.template += `
       <div class="poke-card">
         <h2 class="pokes-name">${item.species.name}</h2>
-        <img class="pokes-img" src="${item.sprites.other.dream_world.front_default}" alt="${item.species.name}" width="300">
+        <img class="pokes-img" src="${item.sprites.other.dream_world.front_default}" alt="${item.species.name}" width="210">
       </div>`;
         });
         this.template += `</div>
-    <div class="page-buttons">
+    <div class="button">
       <button class="previous-button">Anterior</button>
       <button class="next-button">Siguiente</button>
     </div>`;
