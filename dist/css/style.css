@@ -65,7 +65,10 @@ div .poke-card{
   border-radius: 40px;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border-style: groove;
-
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1.5rem;
+  padding: 3rem;
 }
 section li {
     border: 1px rgb(220, 220, 220) solid;
