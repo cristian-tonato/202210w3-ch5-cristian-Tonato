@@ -10,7 +10,7 @@ export class Footer extends Component {
         return `
         <footer>
             <address class= "name">Cristian Tonato</address>
-        </footer>
+            </footer>
         `;
     }
 }
