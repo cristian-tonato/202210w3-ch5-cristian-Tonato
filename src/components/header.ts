@@ -12,7 +12,8 @@ export class Header extends Component {
     return `
         <header>
           <div>
-            <h1><img class="logtype" src="./img/International_Pokémon_logo.svg.png" alt=""></h1>
+            <h1 class ="logotype">
+            <img class="logtype_img" src="./img/International_Pokémon_logo.svg.png" alt=""></h1>
           </div>
           <div class="menu">
         <ul class ="menu_home">
