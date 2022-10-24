@@ -10,6 +10,7 @@ body {
     background-image: url("/dist/img/wp1864291.jpg");
 }
 
+
 a.home{
   color: rgb(126, 74, 5);
   list-style: none;
@@ -59,6 +60,7 @@ main {
     margin: 1rem;
     padding: 1rem;
 }
+
 div .poke-card{
   border-style: solid;
   color: rgb(251, 254, 218);
@@ -76,6 +78,13 @@ section li {
     margin: 0.5rem;
     display: flex;
     justify-content: space-evenly;
+}
+div.button{
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  margin: 1rem;
+  padding: 1rem;
 }
 .previous-button{
   background-color: antiquewhite;
